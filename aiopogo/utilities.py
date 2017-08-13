@@ -29,7 +29,7 @@ class IdGenerator:
 
     def next(self):
         #         self.rpcIdHigh = (Math.pow(7, 5) * self.rpcIdHigh) % (Math.pow(2, 31) - 1);
-        self.high = (7**5 * self.high) % (2**31)-1
+        self.high = (7**5 * self.high) % ((2**31)-1)
         return self.high
 
     def request_id(self):
